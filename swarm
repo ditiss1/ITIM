@@ -1,0 +1,15 @@
+ mkdir docker
+    2  cd docker/
+    3  nano docker.sh
+    4  bash docker.sh
+    5  ls
+    6  docker login -u krunalhande -p mh14cy3340
+    7  sudo chmod 777 /var/run/docker.sock
+    8  docker login -u krunalhande -p mh14cy3340
+    9  docker swarm
+   10  docker swarm init
+   11  nano Dockerfile
+   12  docker build -t nginx
+   13  docker build -t nginx .
+   14  docker service start --name abc --replicas 2 -d -p 8080:80 nginx
+   15  docker service create --name abc --replicas 2 -d -p 8080:80 nginx
